@@ -1,0 +1,284 @@
+.infocomp {
+  margin-bottom: 120px;
+  z-index: 1;
+}
+
+.infocomp__text {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: #402E32;
+  margin-bottom: 30px;
+}
+
+.infocomp__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.infocomp__item {
+  width: 298px;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 0px 10px 150px #E0E1EC;
+  transition: all 0.05s linear ;
+  cursor: pointer;
+}
+
+.infocomp__item:hover {
+  transform: scale(1.04) !important;
+  transition: all 0.05s linear !important;
+}
+
+.infocomp__item-sum {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: #D7B56D;
+}
+
+.infocomp__item-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: #402E32;
+}
+
+.infocomp__video {
+  width: 100%;
+  height: 620px;
+  border-radius: 40px;
+  margin-top: 30px;
+
+  animation-name: video;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+  opacity: 0;
+  position: relative;
+  bottom: -80px;
+}
+
+@keyframes video {
+  0% {
+    opacity: 0;
+    bottom: -80px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+.infocomp__video-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.infocomp__video-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  border: none;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+}
+
+.infocomp__video-button img {
+  width: 100%;
+  height: 100%;
+}
+
+.infocomp__video-home {
+  
+}
+
+@media screen and (max-width:1300px) {
+  .infocomp__item {
+    width: 278px;
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .infocomp__item {
+    width: 260px;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .infocomp__item {
+    width: 23%; 
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .infocomp__item-sum {
+    font-size: 50px;
+  }
+  .infocomp__item-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:1040px) {
+  .infocomp__item-sum {
+    font-size: 45px;
+  }
+  .infocomp__item-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:950px) {
+  .infocomp__item-sum {
+    font-size: 45px;
+  }
+  .infocomp__item-text {
+    font-size: 15px;
+  }
+  .infocomp__item {
+    padding: 22px;
+  }
+  .infocomp__video {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .infocomp__video-img {
+    border-radius: 30px;
+  }
+  .infocomp__video {
+    border-radius: 30px;
+  }
+  .infocomp {
+    margin-bottom: 90px;
+  }  
+}
+
+@media screen and (max-width:870px) {
+  .infocomp__item-sum {
+    font-size: 42px;
+  }
+  .infocomp__item-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .infocomp__item {
+    border-radius: 20px;
+  }
+  .infocomp {
+    margin-bottom: 90px;
+  }
+}
+
+@media screen and (max-width:790px) {
+  .infocomp__item-text {
+    font-size: 13px;
+  }
+  .infocomp__item {
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width:730px) {
+  .infocomp__item-sum {
+    font-size: 38px;
+  }
+  .infocomp__item-text {
+    font-size: 12px;
+  }
+  .infocomp__item {
+    padding: 14px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .infocomp__item {
+    width: 47.3%;
+    padding: 12px;
+  }
+  .infocomp__content {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+
+@media screen and (max-width:500px) {
+  .infocomp__item-sum {
+    font-size: 30px;
+    margin-bottom: 4px;
+  }
+  .infocomp__text {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .infocomp__item {
+    border-radius: 16px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .infocomp__item-text {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .infocomp__video {
+    margin-top: 20px;
+    border-radius: 16px;
+    height: 230px;
+  }
+  .infocomp__video-button {
+    width: 50px;
+    height: 50px;
+  }
+  .infocomp__video-img {
+    border-radius: 16px;
+  }
+  .infocomp {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width:410px) {
+  .infocomp__item {
+    width: 46%;
+  }
+}
+
+@media screen and (max-width:390px) {
+  .infocomp__item {
+    width: 47%;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .infocomp__item {
+    width: 46.5%;
+  }
+}
+
+@media screen and (max-width:371px) {
+  .infocomp__item {
+    width: 46.3%;
+  }
+}

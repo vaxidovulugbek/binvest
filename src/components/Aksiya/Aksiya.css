@@ -1,0 +1,228 @@
+.aksiya {
+  margin-bottom: 90px;
+  z-index: 1;
+}
+
+.aksiya__text {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: #402E32;
+  margin-bottom: 30px;
+}
+
+.aksiya__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.aksiya__item {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 150px rgba(224, 225, 236, 0.19);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32%;
+  height: 360px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  position: relative;
+}
+
+.aksiya__card-position {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  z-index: 2;
+}
+
+.aksiya__item-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+.aksiya__card-img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s linear;
+}
+
+.aksiya__item:hover .aksiya__card-img {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
+
+.aksiya__content-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color:#fff;
+  margin: 0;
+}
+
+.aksiya__content-subtext {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.aksiya__day {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  z-index: 2;
+}
+
+.aksiya-cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aksiya-card {
+  margin: 0;
+  width: 31%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+.aksiya-card .aksiya-image img {
+  max-width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.aksiya-card .aksiya-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.aksiya-card.aksiya-is-loading .aksiya-image,
+.aksiya-card.aksiya-is-loading h2,
+.aksiya-card.aksiya-is-loading p {
+  background: #eee;
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  border-radius: 5px;
+  background-size: 200% 100%;
+  -webkit-animation: 1.5s shine linear infinite;
+          animation: 1.5s shine linear infinite;
+}
+.aksiya-card.aksiya-is-loading .aksiya-image {
+  height: 350px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.aksiya-card.aksiya-is-loading h2 {
+  height: 30px;
+  background: #fff;
+  margin: 0 20px 10px 20px;
+}
+.aksiya-card.aksiya-is-loading p {
+  height: 70px;
+  background: #fff;
+  margin: 0 20px 20px 20px;
+}
+
+@-webkit-keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+
+@media screen and (max-width:900px) {
+  .aksiya__content-text {
+    font-size: 20px;
+  }
+  .aksiya__content-subtext {
+    font-size: 16px;
+  }
+  .aksiya__day {
+    font-size: 16px;
+  }
+  .aksiya__item {
+    width: 48%;
+    border-radius: 30px;
+  }
+  .aksiya {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width:760px) {
+  .aksiya__content-text {
+    font-size: 20px;
+  }
+  .aksiya__content-subtext {
+    font-size: 16px;
+  }
+  .aksiya__day {
+    font-size: 16px;
+  }
+  .aksiya__text {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .aksiya-cards {
+    flex-wrap: wrap;
+  }
+  .aksiya-card {
+    width: 100%;
+  }
+  .aksiya-card:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .aksiya__item {
+    width: 100%;
+    height: 290px;
+    border-radius: 20px;
+  }
+  .aksiya__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width:480px){
+  .aksiya {
+    margin-bottom: 10px;
+  }
+  .aksiya__card-position {
+    bottom: 20px;
+    left: 20px;
+  }
+  .aksiya__day {
+    bottom:20px;
+    left: 20px;
+  }
+}
+

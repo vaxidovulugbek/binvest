@@ -11,3 +11,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.containers {
+  width: 1280px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.css-eg0mwd-MuiSlider-thumb {
+  box-shadow: unset !important;
+}
+
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+  z-index: 1;
+}
+
+.active {
+  color: #D7B56D !important;
+}
+
+.all__responsheader {
+  display: none;
+}
+
+.logo-svg {
+  width: 160px;
+  height: 46px;
+}
+
+
+@media screen and (max-width:1400px) {
+  .containers {
+    width: 94%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .all__header {
+    display: none;
+  }
+  .all__responsheader {
+    display: block;
+  }
+  .Toastify__toast-container {
+    width: 75vw !important;
+    top: 10px !important;
+    right: 12px !important;
+    left: unset !important;
+  }
+}
+
+@media (pointer: coarse) {
+  .css-187mznn-MuiSlider-root {
+      padding: 13px 0 !important;
+  }
+}

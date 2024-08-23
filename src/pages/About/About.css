@@ -1,0 +1,303 @@
+
+.about__content {
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.about__content-sum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.about__content-text {
+  width: 100%;
+  margin: 30px 0 0 0;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.about__item {
+  width: 23%;
+  height: 161px;
+  padding: 30px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.05s linear;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__item:hover {
+  transform: scale(1.04);
+  transition: all 0.05s linear;
+}
+
+.about__item-sum {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: #D7B56D;
+  margin-bottom: 10px;
+}
+
+.about__item-text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: #402E32;
+}
+
+.about__text {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: #402E32;
+}
+
+.about__comanda {
+  margin-bottom: 120px;
+}
+
+.about__comanda-content {
+  padding: 30px 20px 0px 20px;
+  background: #F9F9FB;
+  border-radius: 40px;
+  
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 !important;
+}
+
+.about__comanda-user {
+  border-radius: 20px;
+  margin: 0 0 20px 0;
+}
+
+.about__comanda-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__comanda-info h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  color: #402E32;
+  text-align: center;
+  margin: 8px 0 4px 0;
+  cursor: default;
+}
+
+.about__comanda-info h4 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #402E32;
+  margin: 0;
+  text-align: center;
+}
+
+.about__bg-img {
+  width: 100%;
+  height: 516px;
+  border-radius: 40px;
+  margin-bottom: 30px;
+  object-fit: cover;
+
+  animation-name: abouthero;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+  opacity: 0;
+  position: relative;
+  bottom: -50px;
+  left: 0;
+}
+
+@keyframes abouthero {
+  0% {
+    opacity: 0;
+    bottom: -50px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+.about__bg-resimg {
+   display: none;
+ }
+
+.about__comanda-user-bgimg {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+@media screen and (max-width:1200px) {
+  .about__comanda-user-bgimg {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width:1060px) {
+  .about__comanda-user-bgimg {
+    height: 140px;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .about__item {
+    padding: 20px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .about__comanda-content {
+    border-radius: 30px;
+  }
+  .about__bg-img {
+    border-radius: 30px;
+  }
+  .about__content {
+    margin-bottom: 90px;
+  }
+  .about__item-sum {
+    font-size: 38px;
+  }
+  .about__item-text {
+    font-size: 18px;
+  }
+  .about__item {
+    border-radius: 20px;
+  }
+  .about__comanda {
+    margin-bottom: 90px;
+  }
+  .about__comanda-info h3 {
+    font-size: 16px;
+  }
+  .about__comanda-info h4 {
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:860px) {
+  .about__comanda-user {
+    border-radius: 12px;
+  }
+
+  .about__comanda-user-bgimg {
+    border-radius: 12px;
+  }
+}
+
+@media screen and (max-width:730px) {
+  .about__comanda-user-bgimg {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width:530px) {
+  .about__comanda-user-bgimg {
+    height: 150px;
+  }
+}
+
+
+@media screen and (max-width:600px) {
+  .about__content-sum {
+    flex-wrap: wrap;
+  }
+  .about__item {
+    width: 48%;
+  }
+  .about__item:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  .about__item:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  .about__item-sum {
+    font-size: 40px;
+  }
+  .about__comanda {
+    margin-bottom: 60px;
+  }
+  .about__content-text {
+    padding: 20px;
+  }
+}
+
+
+@media screen and (max-width:480px) {
+  .about__bg-img {
+    display: none;
+  }
+  .about__bg-resimg {
+    border-radius: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    display: inline-block;
+  }
+  .about {
+    padding-top: 90vh;
+  }
+  .about__content {
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+  .about__item-text {
+    font-size: 14px;
+  }
+  .about__item-sum {
+    font-size: 30px;
+  }
+  .about__item {
+    padding: 12px;
+    width: 47%;
+    border-radius: 16px;
+  }
+  .about__comanda-content {
+    padding: 20px 10px 0 10px;
+    border-radius: 20px;
+  }
+  .about__comanda {
+    margin-bottom: 40px;
+  }
+  .about__comanda-user {
+    margin: 0 0 16px 0;
+  }
+  .about__text {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .about__content-text {
+    padding: 12px;
+    margin: 20px 0 0 0;
+    font-size: 14px;
+    border-radius: 16px;
+  }
+}
